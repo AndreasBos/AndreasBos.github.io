@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/e27af89108.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andreas Boscariol</title>
+
+  <link rel="stylesheet" href="style.css">
+<!--NAV-->
+<ul class="nav" id="Topnav">
+  <li><a href="home.html">Home</a></li>
+
+  <!-- DROPDOWN -->
+  <li class="dropdown">
+    <a href="oprojects.html" class="dropbtn">Ongoing Projects</a>
+    <div class="dropdown-content">
+      <a href="oprojects.html#Python-Scripts">Python Scripts</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="cprojects.html" class="dropbtn">Completed Projects</a>
+    <div class="dropdown-content">
+      <a href="cprojects.html#3D-Models">3D Models</a>
+    </div>
+  </li>
+
+  <li><a href="about.html">About</a></li>
+
+  <a href="javascript:void(0);" style="font-size:16px;color: white;cursor:pointer" class="icon" onclick="openSideNav()">&#9776;</a>
+  <!-- Dark Mode-->
+  <li class="button"><button onclick="DarkMode()"style="cursor:pointer"><i class="far fa-lightbulb"></i></button></li>
+</ul>
+<!--SIDE NAV-->
+<div id="Sidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="oprojects.html">Ongoing Projects</a>
+  <a href="cprojects.html">Completed Projects</a>
+  <a href="about.html">About</a>
+</div>
+</head>
+
+
+
+<body onload="CheckDarkMode()">
+
+<h1>Welcome to my website</h1>
+<p>This is a paragraph.</p>
+
+<!-- Dark Mode-->
+<script type="text/javascript" src="global.js"></script>
+
+
+
+</body>
+</html>
+
+<!--
+TO DO
+
+NEED WEBSITE HOSTING
+Dark Theme consitency (Cookies)
+Email form
+
+-->
