@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* BODY */
+body {
+  background-color: whitesmoke;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+
+/* REDUCE TEXT */
+h1 {
+  padding: 60px 50px 75px 100px;
+  font-size: 50px;
+}
+
+h3 {
+  padding: 60px 50px 75px 100px;
+  font-size: 25px;
+}
+
+h4 {
+  padding: 60px 50px 75px 0px;
+  font-size: 25px;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding-left: 100px;
+}
+
+/* NAV*/
+ul.nav{
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #4f4f4f; /*Dark Gray*/
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li.button {
+  padding: 14px 16px;	
+  float: right;	
+}
+
+li a {
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: gray;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+li.class {
+	float:right;
+}
+
+/* Side Nav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #262626;
+  color: white;
+}
+
+/* Coloumns */
+#contentBox {
+    margin: 0 auto;
+    width: 88%;
+}
+
+#contentBox .column {
+    float: left;
+    width: 50%;
+    padding:5%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Images */
+img {
+  margin-top: 15px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Style Divide Line */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+}
+
+/* Social */
+.social{
+  margin-left: 100px;
+  max-height: 125px; 
+  max-width: 125px;
+}
+
+/* Hidden Menu */
+.nav .icon {
+  display: none;
+  padding: 14px 16px; 
+}
+
+/* Contact Page */
+.contactpage {
+  width: 50%;
+  float: left;
+  padding: 25px 0px 0px 100px;
+}
+
+.field {
+  width:  88%;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+.textarea {
+  padding: 10px;
+  margin-top: 10px;
+  width:  88%;
+  height: 150px;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactbutton {
+  display: block;
+  margin-top: 10px;
+}
+
+/* ADD MORE RESIZE */
+@media screen and (max-width: 980px) {
+
+	h1 {
+  	padding: 45px 30px 75px 50px;
+  	font-size: 40px;
+	}
+
+	h3 {
+	 	padding: 45px 30px 75px 50px;
+	 	font-size: 25px;
+	}
+
+	h4 {
+	  padding: 45px 30px 75px 0px;
+	 	font-size: 25px;
+	}
+  .column {
+    width: 100%;
+  }
+  p {
+    font-size: 20px;
+    padding-left: 50px;
+  }
+
+  li a{
+    display: block;
+    float: none;
+  }
+  .social{
+    margin-left: 50px;
+    max-height: 100px; 
+    max-width: 100px;
+  }
+  .contactpage {
+    width: 95%;
+    float: left;
+    padding: 25px 0px 0px 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+  }
+
+	h1 {
+  	padding: 30px 25px 35px 15px;
+  	font-size: 30px;
+	}
+
+	h3 {
+	 	padding: 30px 25px 20px 20px;
+	 	font-size: 20px;
+	}
+
+	h4 {
+	  padding: 30px 25px 20px 0px;
+	 	font-size: 20px;
+	}
+
+  hr {
+    padding: 0px;
+  }
+
+  p {
+    font-size: 20px;
+    padding-left: 15px;
+  }
+
+  .social{
+    margin-left: 15px;
+    max-height: 75px; 
+    max-width: 75px;
+  }
+  
+  #contentBox .column {
+    padding:0;
+  }
+
+  .nav a, .dropdown .dropbtn {
+    display: none;
+  }
+
+  .nav a.icon {
+    float: left;
+    display: block;
+  }
+
+  /* Needs to be worked on*/
+  .nav.responsive {
+    position: relative;
+  }
+
+  .nav.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .contactpage {
+    width: 100%;
+    float: left;
+    padding: 25px 0px 0px 15px;
+  }
+}
