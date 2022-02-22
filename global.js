@@ -10,4 +10,12 @@ function closeSideNav() {
 //Animated Scroling
 
 //Sort
-var toSort = document.getElementById('list').children;
+function sortAplha(){
+
+}
+function sortNew(){
+    
+}
+function sortOld(){
+    
+}

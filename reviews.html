@@ -2,6 +2,7 @@
 <html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="global.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
@@ -26,13 +27,13 @@
   <div class="dropdown">
     <button class="dropbtn">Sort By:</button>
     <div class="dropdown-content">
-      <a href="">Alphabetical</a>
-      <a href="">Date - Oldest to Newest</a>
-      <a href="">Date - Newest to Oldest</a>
+      <a href="javascript:void(0);" onclick="sortAlpha()">Alphabetical</a>
+      <a href="javascript:void(0);" onclick="sortNew()">Date - Oldest to Newest</a>
+      <a href="javascript:void(0);" onclick="sortOld()">Date - Newest to Oldest</a>
     </div>
   </div>
   <div id="list">
-    <div class="reviews">
+    <div class="reviews" data-aos="fade-right">
       <a href="https://www.imdb.com/title/tt0113247"><img class="poster" src="https://m.media-amazon.com/images/M/MV5BNDNiOTA5YjktY2Q0Ni00ODgzLWE5MWItNGExOWRlYjY2MjBlXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_.jpg"> </a>
       <h4 class="date">02/03/2022</h4>
       <h4 class="title">La Haine</h4>
@@ -46,7 +47,7 @@
         Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Egestas pretium aenean pharetra magna ac placerat. Nisi scelerisque eu ultrices vitae auctor eu. Ipsum a arcu cursus vitae congue mauris rhoncus aenean. A scelerisque purus semper eget. Sit amet risus nullam eget felis. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Tristique senectus et netus et malesuada fames ac. Amet porttitor eget dolor morbi non arcu risus quis. Vitae congue eu consequat ac felis donec. Enim nec dui nunc mattis enim ut tellus. Justo donec enim diam vulputate ut pharetra sit. Enim nec dui nunc mattis enim ut tellus. Nunc sed blandit libero volutpat sed cras ornare arcu. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Nunc mattis enim ut tellus elementum sagittis vitae et. Scelerisque eleifend donec pretium vulputate sapien nec. At erat pellentesque adipiscing commodo elit at imperdiet. 
         </p>
     </div>
-    <div class="reviews">
+    <div class="reviews" data-aos="fade-right">
       <a href="https://www.imdb.com/title/tt0113247"><img class="poster" src="https://m.media-amazon.com/images/M/MV5BNDNiOTA5YjktY2Q0Ni00ODgzLWE5MWItNGExOWRlYjY2MjBlXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_.jpg"> </a>
       <h4 class="date">02/03/2022</h4>
       <h4 class="title">La Haine</h4>
@@ -60,7 +61,7 @@
         Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Egestas pretium aenean pharetra magna ac placerat. Nisi scelerisque eu ultrices vitae auctor eu. Ipsum a arcu cursus vitae congue mauris rhoncus aenean. A scelerisque purus semper eget. Sit amet risus nullam eget felis. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Tristique senectus et netus et malesuada fames ac. Amet porttitor eget dolor morbi non arcu risus quis. Vitae congue eu consequat ac felis donec. Enim nec dui nunc mattis enim ut tellus. Justo donec enim diam vulputate ut pharetra sit. Enim nec dui nunc mattis enim ut tellus. Nunc sed blandit libero volutpat sed cras ornare arcu. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Nunc mattis enim ut tellus elementum sagittis vitae et. Scelerisque eleifend donec pretium vulputate sapien nec. At erat pellentesque adipiscing commodo elit at imperdiet. 
         </p>
     </div>
-    <div class="reviews">
+    <div class="reviews" data-aos="fade-right">
       <a href="https://www.imdb.com/title/tt0113247"><img class="poster" src="https://m.media-amazon.com/images/M/MV5BNDNiOTA5YjktY2Q0Ni00ODgzLWE5MWItNGExOWRlYjY2MjBlXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_.jpg"> </a>
       <h4 class="date">02/03/2022</h4>
       <h4 class="title">La Haine</h4>
@@ -74,7 +75,7 @@
         Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Egestas pretium aenean pharetra magna ac placerat. Nisi scelerisque eu ultrices vitae auctor eu. Ipsum a arcu cursus vitae congue mauris rhoncus aenean. A scelerisque purus semper eget. Sit amet risus nullam eget felis. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Tristique senectus et netus et malesuada fames ac. Amet porttitor eget dolor morbi non arcu risus quis. Vitae congue eu consequat ac felis donec. Enim nec dui nunc mattis enim ut tellus. Justo donec enim diam vulputate ut pharetra sit. Enim nec dui nunc mattis enim ut tellus. Nunc sed blandit libero volutpat sed cras ornare arcu. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Nunc mattis enim ut tellus elementum sagittis vitae et. Scelerisque eleifend donec pretium vulputate sapien nec. At erat pellentesque adipiscing commodo elit at imperdiet. 
         </p>
     </div>
-    <div class="reviews">
+    <div class="reviews" data-aos="fade-right">
       <a href="https://www.imdb.com/title/tt0113247"><img class="poster" src="https://m.media-amazon.com/images/M/MV5BNDNiOTA5YjktY2Q0Ni00ODgzLWE5MWItNGExOWRlYjY2MjBlXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_.jpg"> </a>
       <h4 class="date">02/03/2022</h4>
       <h4 class="title">La Haine</h4>
@@ -88,7 +89,7 @@
         Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Egestas pretium aenean pharetra magna ac placerat. Nisi scelerisque eu ultrices vitae auctor eu. Ipsum a arcu cursus vitae congue mauris rhoncus aenean. A scelerisque purus semper eget. Sit amet risus nullam eget felis. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Tristique senectus et netus et malesuada fames ac. Amet porttitor eget dolor morbi non arcu risus quis. Vitae congue eu consequat ac felis donec. Enim nec dui nunc mattis enim ut tellus. Justo donec enim diam vulputate ut pharetra sit. Enim nec dui nunc mattis enim ut tellus. Nunc sed blandit libero volutpat sed cras ornare arcu. Placerat duis ultricies lacus sed turpis tincidunt id aliquet risus. Nunc mattis enim ut tellus elementum sagittis vitae et. Scelerisque eleifend donec pretium vulputate sapien nec. At erat pellentesque adipiscing commodo elit at imperdiet. 
         </p>
     </div>
-    <div class="reviews">
+    <div class="reviews" data-aos="fade-right">
       <a href="https://www.imdb.com/title/tt0113247"><img class="poster" src="https://m.media-amazon.com/images/M/MV5BNDNiOTA5YjktY2Q0Ni00ODgzLWE5MWItNGExOWRlYjY2MjBlXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_.jpg"> </a>
       <h4 class="date">02/03/2022</h4>
       <h4 class="title">La Haine</h4>
@@ -103,9 +104,15 @@
         </p>
     </div>
   </div>
-  <a href="index.html"><p id="expand">Back</p></a>
+  <a href="index.html" ><p id="expand" >Back</p></a>
 </div>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:400,
+      duration:1000
+    });
+  </script>
 </body>
 </html>
 
